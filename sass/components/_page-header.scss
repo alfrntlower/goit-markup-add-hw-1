@@ -1,0 +1,63 @@
+// Header
+.header-site-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 40px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.header-site-nav_logo-icon {
+  width: 41px;
+  fill: #231f20;
+  outline: 1px solid red;
+}
+.header-site-nav__logo {
+  text-decoration: none;
+  font-family: "Homemade Apple";
+  color: $main-text-color;
+}
+
+.header-site-nav_list {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-site-nav_list .header-site-nav__item + .header-site-nav__item {
+  margin-left: 31px;
+}
+
+.header-site-nav__link {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 22px;
+  color: $main-text-color;
+
+  transition: color $time-transition $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.header-site-nav__button-gift {
+  color: $accent-color;
+  border-radius: 5px;
+  border: 1px solid $accent-color;
+
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  background-color: $white-color;
+
+  transition: color $time-transition $cubic, border $time-transition $cubic;
+
+  &:hover,
+  &:focus {
+    color: $add-text-color;
+    border: 1px solid $add-text-color;
+  }
+}
