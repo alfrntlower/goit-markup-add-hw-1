@@ -10,15 +10,12 @@
   padding-bottom: 27px;
 }
 
-.header-site-nav_logo-icon {
-  width: 41px;
-  fill: #231f20;
-  outline: 1px solid red;
-}
 .header-site-nav__logo {
   text-decoration: none;
   font-family: "Homemade Apple";
   color: $main-site-color;
+
+  @extend %link-hover-change-color;
 }
 
 .header-site-nav_list {
@@ -36,12 +33,7 @@
   line-height: 22px;
   color: $main-site-color;
 
-  transition: color $time-transition $cubic;
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
+  @extend %link-hover-change-color;
 }
 .header-site-nav__button-gift {
   color: $accent-color;
@@ -53,11 +45,5 @@
   text-transform: uppercase;
   background-color: $white-color;
 
-  transition: color $time-transition $cubic, border $time-transition $cubic;
-
-  &:hover,
-  &:focus {
-    color: $add-site-color;
-    border: 1px solid $add-site-color;
-  }
+  @extend %button-box-shadow;
 }

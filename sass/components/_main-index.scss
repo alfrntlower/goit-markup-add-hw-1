@@ -29,6 +29,8 @@
   color: $white-color;
   background-color: $accent-color;
   //   padding: 23px 24px 15px 25px;
+
+  @extend %button-box-shadow;
 }
 .hero-side__img {
   display: block;
@@ -75,6 +77,8 @@
   background-color: $bg-color;
 
   text-transform: uppercase;
+
+  @extend %button-box-shadow;
 }
 
 // Post Tall
@@ -112,8 +116,9 @@
 }
 .post-tall__item {
   transition: box-shadow $time-transition $cubic;
-  &:hover {
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+  &:hover,
+  &:focus {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   }
 }
 
@@ -142,6 +147,8 @@
   font-size: 14px;
   line-height: 1.2;
   color: $main-site-color;
+
+  @extend %link-hover-change-color;
 }
 
 // CTA Section
@@ -175,6 +182,8 @@
   color: $white-color;
   background-color: $add-site-color;
   border-radius: 5px;
+
+  @extend %button-box-shadow;
 }
 
 .cta-section__button-how-it-works {
@@ -188,6 +197,8 @@
   background-color: $accent-color;
   border-radius: 5px;
   border: 1px solid $main-site-color;
+
+  @extend %button-box-shadow;
 }
 
 // Post Blog Top
@@ -217,6 +228,13 @@
 .post-blog-top__mainpost {
   display: flex;
   margin-bottom: 40px;
+
+  transition: box-shadow $time-transition $cubic;
+
+  &:hover,
+  &:focus {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
 }
 .post-blog-top__info {
   padding: 63px 0 49px 78px;
@@ -247,6 +265,8 @@
   font-size: 18px;
   line-height: 1.2;
   color: $white-color;
+
+  @extend %link-hover-change-color;
 }
 
 .post-blog-top__list {
@@ -260,7 +280,8 @@
 
   &:hover,
   &:focus {
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   }
 }
 
@@ -286,4 +307,6 @@
   line-height: 1.2;
   text-decoration: none;
   color: $main-site-color;
+
+  @extend %link-hover-change-color;
 }
