@@ -18,7 +18,7 @@
 .header-site-nav__logo {
   text-decoration: none;
   font-family: "Homemade Apple";
-  color: $main-text-color;
+  color: $main-site-color;
 }
 
 .header-site-nav_list {
@@ -34,7 +34,7 @@
   text-decoration: none;
   font-size: 18px;
   line-height: 22px;
-  color: $main-text-color;
+  color: $main-site-color;
 
   transition: color $time-transition $cubic;
 
@@ -57,7 +57,7 @@
 
   &:hover,
   &:focus {
-    color: $add-text-color;
-    border: 1px solid $add-text-color;
+    color: $add-site-color;
+    border: 1px solid $add-site-color;
   }
 }

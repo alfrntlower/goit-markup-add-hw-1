@@ -6,7 +6,7 @@
 }
 .hero-side__left-box {
   padding: 154px 118px 135px 162px;
-  background-color: $bg-accent-color;
+  background-color: $bg-color;
 }
 
 .hero-side__heading {
@@ -44,7 +44,7 @@
 
 .feature-split__right-box {
   padding: 164px 166px 104px 104px;
-  background-color: $bg-accent-color;
+  background-color: $bg-color;
 }
 .feature-split__img {
   display: block;
@@ -72,7 +72,7 @@
   line-height: 1.2;
   color: $accent-color;
   border: 1px solid $accent-color;
-  background-color: $bg-accent-color;
+  background-color: $bg-color;
 
   text-transform: uppercase;
 }
@@ -105,14 +105,16 @@
 
 .post-tall__list {
   display: flex;
-  flex-direction: row;
 }
 
 .post-tall__list .post-tall__item + .post-tall__item {
   margin-left: 30px;
 }
-.post-tall__item:hover {
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+.post-tall__item {
+  transition: box-shadow $time-transition $cubic;
+  &:hover {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+  }
 }
 
 .post-tall__img {
@@ -124,6 +126,10 @@
 .post-tall__thumb {
   background-color: $add-bg-color;
   padding: 24px;
+  transition: background-color $time-transition $cubic;
+  .post-tall__item:hover & {
+    background-color: $white-color;
+  }
 }
 
 .post-tall__title {
@@ -135,7 +141,7 @@
   text-decoration: none;
   font-size: 14px;
   line-height: 1.2;
-  color: $main-text-color;
+  color: $main-site-color;
 }
 
 // CTA Section
@@ -149,6 +155,15 @@
   padding-right: 235px;
   background-color: $accent-color;
 }
+// .cta-section__heading {
+//   max-width: 325px;
+//   font-size: 32px;
+//   line-height: 1.2;
+// }
+// .cta-section__text {
+//   font-size: 32px;
+//   line-height: 1.2;
+// }
 
 .cta-section__button-find-gift-now {
   margin-left: 239px;
@@ -158,8 +173,8 @@
   text-transform: uppercase;
 
   color: $white-color;
-  background-color: $add-text-color;
-  border-radius: 10px;
+  background-color: $add-site-color;
+  border-radius: 5px;
 }
 
 .cta-section__button-how-it-works {
@@ -169,12 +184,13 @@
 
   text-transform: uppercase;
 
-  color: $main-text-color;
+  color: $main-site-color;
   background-color: $accent-color;
-  border-radius: 10px;
-  border: 1px solid $main-text-color;
+  border-radius: 5px;
+  border: 1px solid $main-site-color;
 }
 
+// Post Blog Top
 .post-blog-top__section {
   padding-top: 88px;
   padding-bottom: 80px;
@@ -205,7 +221,7 @@
 .post-blog-top__info {
   padding: 63px 0 49px 78px;
   width: 770px;
-  background-color: $add-text-color;
+  background-color: $add-site-color;
 }
 
 .main-post__author {
@@ -239,7 +255,11 @@
 
 .post-blog-top__item {
   padding: 48px 48px 50px 48px;
-  &:hover {
+
+  transition: box-shadow $time-transition $cubic;
+
+  &:hover,
+  &:focus {
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
   }
 }
@@ -265,5 +285,5 @@
   font-size: 14px;
   line-height: 1.2;
   text-decoration: none;
-  color: $main-text-color;
+  color: $main-site-color;
 }

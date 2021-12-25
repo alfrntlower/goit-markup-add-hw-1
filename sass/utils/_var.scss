@@ -7,10 +7,11 @@
 вторичный фон #FAFAFA
 */
 
-$main-text-color: #000000;
-$add-text-color: #231f20;
+$main-site-color: #000000;
+$add-site-color: #231f20;
+
 $accent-color: #f7941e;
-$bg-accent-color: #f1f1f2;
+$bg-color: #f1f1f2;
 $add-bg-color: #fafafa;
 $white-color: #ffffff;
 
@@ -21,7 +22,7 @@ body {
   font-family: "Roboto", sans-serif;
 
   background-color: $white-color;
-  color: $main-text-color;
+  color: $main-site-color;
   font-size: 18px;
   line-height: 1.2;
 }

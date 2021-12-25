@@ -1,5 +1,93 @@
+// Footer
+.footer-container {
+  align-items: center;
+  padding-top: 106px;
+  padding-bottom: 35px;
+}
+
+// Footer Site Nav
+.footer-site-nav__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 43px;
+}
+
+.footer-site-nav__item:nth-child(3) {
+  margin-left: 141px;
+  margin-right: 141px;
+}
+
+.footer-site-nav__item:nth-child(2),
+.footer-site-nav__item:nth-child(5) {
+  margin-left: 81px;
+}
+
+.footer-site-nav__link {
+  text-decoration: none;
+  color: $main-site-color;
+
+  transition: color $time-transition $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.footer-site-nav__logo {
+  text-decoration: none;
+  font-family: "Homemade Apple";
+  color: $accent-color;
+  transition: color $time-transition $cubic;
+
+  &:hover,
+  &:focus {
+    color: $main-site-color;
+  }
+}
+.footer-site-nav__line {
+  margin-left: 220px;
+  align-items: center;
+  border: 1px solid $main-site-color;
+  width: 1000px;
+  height: 0;
+  margin-bottom: 55px;
+}
+
+// Footer Social Network Links
+.footer-social__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.footer-social__list .footer-social__item + .footer-social__item {
+  margin-left: 24px;
+}
+
 .footer-social__icon {
   width: 40px;
-  fill: #231f20;
+  height: 40px;
+  fill: black;
   outline: 1px solid red;
+}
+
+// Footer Additional Informatio
+.footer-additional-info__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-additional-info__work-timeline {
+  font-size: 14px;
+  line-height: 1.2;
+}
+.footer-additional-info__link {
+  text-decoration: none;
+  margin-left: 14px;
+
+  font-size: 14px;
+  line-height: 1.2;
+
+  color: $main-site-color;
 }
